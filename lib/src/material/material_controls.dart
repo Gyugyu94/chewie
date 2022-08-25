@@ -165,6 +165,7 @@ class _MaterialControlsState extends State<MaterialControls>
         onTap: () async {
           // 제거함.
           // Navigator.pop(context);
+          print('test pop remove');
           _onSpeedButtonTap();
         },
         iconData: Icons.speed,
