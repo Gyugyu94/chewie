@@ -163,9 +163,7 @@ class _MaterialControlsState extends State<MaterialControls>
     final options = <OptionItem>[
       OptionItem(
         onTap: () async {
-          // 제거함.
           // Navigator.pop(context);
-          print('test pop remove');
           _onSpeedButtonTap();
         },
         iconData: Icons.speed,
