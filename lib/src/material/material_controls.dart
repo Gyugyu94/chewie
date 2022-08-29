@@ -337,6 +337,7 @@ class _MaterialControlsState extends State<MaterialControls>
 
   GestureDetector _buildExpandButton() {
     return GestureDetector(
+      behavior: HitTestBehavior.opaque,
       onTap: _onExpandCollapse,
       child: AnimatedOpacity(
         opacity: notifier.hideStuff ? 0.0 : 1.0,
@@ -345,8 +346,8 @@ class _MaterialControlsState extends State<MaterialControls>
           height: barHeight + (chewieController.isFullScreen ? 15.0 : 0),
           margin: const EdgeInsets.only(right: 12.0),
           padding: const EdgeInsets.only(
-            left: 8.0,
-            right: 8.0,
+            left: 15.0,
+            right: 15.0,
           ),
           child: Center(
             child: Icon(
